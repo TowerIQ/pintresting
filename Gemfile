@@ -13,5 +13,10 @@ group :development, :test do
 	gem 'sqlite3' #not a very robust database,Heroku doesnt like, rails default	
 end
 
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
