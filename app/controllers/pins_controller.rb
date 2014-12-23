@@ -7,7 +7,7 @@ Benchmark.bmbm do |results|
   
 end
   def index
-    @pins = Pin.all
+    @pins = Pin.all.order("created_at DESC")
   end
 
   def show
